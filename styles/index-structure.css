@@ -52,6 +52,8 @@ body{
 
 	position: absolute;
 	transform: translateY(calc(-1 * min(100vw - 496px, 100vh - 16px) * 0.4 - 12px));
+
+	user-select: none;
 }
 
 /* Inside Pane */

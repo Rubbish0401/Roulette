@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function(root_event){
 	//
 
 	let cssPaths = [
-		"/styles/Editor/editor-face.css",
-		"/styles/Editor/editor-structure.css",
-		"/styles/Result/result-face.css",
-		"/styles/Result/result-structure.css",
+		"./styles/Editor/editor-face.css",
+		"./styles/Editor/editor-structure.css",
+		"./styles/Result/result-face.css",
+		"./styles/Result/result-structure.css",
 	];
 	
 	document.head.append(...(function*(){

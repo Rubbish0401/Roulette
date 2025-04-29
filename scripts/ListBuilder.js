@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", root_event => {
 	structureLink.rel = "stylesheet";
 	faceLink.rel = "stylesheet";
 
-	structureLink.href = "/styles/ListBuilder/ListBuilder-structure.css";
-	faceLink.href = "/styles/ListBuilder/ListBuilder-face.css";
+	structureLink.href = "./styles/ListBuilder/ListBuilder-structure.css";
+	faceLink.href = "./styles/ListBuilder/ListBuilder-face.css";
 
 	document.head.append(structureLink, faceLink);
 });
@@ -153,7 +153,7 @@ function createListItem(builder, name, weight){
 	dispName.innerText = editName.value;
 	dispWeight.innerText = editWeight.value;
 
-	delBtn.src = "/src/images/svg/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
+	delBtn.src = "./src/images/svg/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
 
 	// Set Listeners
 	item.addEventListener("transitionend", event => {
@@ -245,7 +245,7 @@ function createAddingItem(buiilder){
 	icon.classList.add("item-adder", "icon");
 
 	// Modify Parameters
-	icon.src = "/src/images/svg/add_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
+	icon.src = "./src/images/svg/add_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
 
 	// Set Listeners
 	item.addEventListener("click", event => {
