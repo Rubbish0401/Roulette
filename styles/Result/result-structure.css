@@ -1,0 +1,42 @@
+.result-display.result-back{
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+
+	margin: 0;
+}
+
+.result-display.result-pane{
+	width: calc((100vw - 512px) * 0.8);
+	height: calc((100vw - 512px) * 0.45);
+
+	display: block;
+	padding: 16px;
+
+	transition:
+		ease height 0.3s,
+		ease padding 0.3s;
+}
+.result-display.result-pane.hidden{
+	height: 0;
+	padding: 0;
+}
+
+.result-display.result-pane > *{
+	margin: 0 auto;
+}
+
+.result-display.result-text{
+	width: 100%;
+	height: calc(100% - 80px);
+}
+
+.result-display.result-btn{
+	width: calc(64px / 9 * 16 + 64px);
+	height: 80px;
+}

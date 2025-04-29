@@ -1,0 +1,73 @@
+.separator{
+	background: #5f6368;
+}
+
+/* Pane */
+
+#display-pane{
+	background: hsl(0, 100%, 80%);
+}
+
+#edit-pane{
+	background: hsl(240, 100%, 80%);
+}
+
+/* Inside Pane */
+.inside-pane{
+	background: #FFFFFF;
+}
+
+/* Display Pane */
+#roulette{
+	border-radius: 50%;
+}
+
+.spin{
+	animation-name: spin;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+}
+
+/* Buttons */
+.row-buttons{
+	/*background: #00000010;*/
+}
+
+.btn-func{
+	padding: 4px;
+	border-radius: 8px;
+}
+
+.btn-func:hover{
+	background: #00000020;
+}
+
+/*  */
+.list{
+	/*background: #FF000020;*/
+}
+
+/*  */
+.button-container{
+	/*background: #00FF0020;*/
+}
+
+.btn-done{
+	font-size: 24px;
+	text-align: center;
+	vertical-align: middle;
+
+	background: #202020;
+	color: #E0E0E0;
+
+	border: none;
+	border-radius: 8px;
+}
+
+
+.btn-done:hover{
+	background: #303030;
+}

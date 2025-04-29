@@ -1,0 +1,43 @@
+/* Structure */
+*{
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	touch-action: none;
+	overflow: hidden;
+}
+
+*::-webkit-scrollbar{
+	display: none;
+}
+
+body{
+	max-width: 100vw;
+	max-height: 100vh;
+	width: 100vw;
+	height: 100vh;
+
+	padding: 0;
+	margin: 0;
+}
+
+body *{
+	touch-action: auto;
+}
+
+/* Face */
+*{
+	font-family: "Noto Sans JP", "Open Sans";
+	color: #5F6368;
+}
+
+a{
+	color: #303234;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}

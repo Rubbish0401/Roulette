@@ -1,0 +1,52 @@
+/**/
+
+.list-body{
+}
+
+.list-body > .row{
+}
+
+/* AddingItem */
+.item-adder.row{
+}
+
+.item-adder.icon{
+}
+
+.item-adder.row:hover .item-adder.icon{
+}
+
+/* ListItem */
+.list-item.row{
+}
+
+.list-item.row.close{
+}
+
+.list-item.colour{
+	border-radius: 2px;
+	border: 1px solid #000000;
+}
+
+.list-item.name-edit{
+	border: none;
+	outline: none;
+}
+
+.list-item.weight-edit{
+	border: none;
+	outline: none;
+}
+
+.list-item.name-edit, .list-item.name-display, .list-item.weight-edit, .list-item.weight-display{
+	font-size: 20px
+}
+
+.list-item.del-btn{
+	opacity: 0;
+	transition: ease opacity 1s;
+}
+
+.list-item.del-btn:hover{
+	opacity: 1;
+}

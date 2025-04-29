@@ -1,0 +1,36 @@
+.result-display{
+	user-select: none;
+}
+
+.result-display.result-back{
+	
+}
+
+.result-display.result-pane{
+	background: #00000080;
+}
+
+.result-display.result-text{
+	text-align: center;
+	vertical-align: middle;
+	
+	color: #FFFFFF;
+	font-size: 96px;
+}
+
+.result-display.result-btn{
+	text-align: center;
+	vertical-align: middle;
+
+	font-size: 32px;
+	line-height: 80px;
+
+	color: #FFFFFF;
+	background: #000000;
+
+	border-radius: 8px;
+}
+
+.result-display.result-btn:hover{
+	background: #282828;
+}

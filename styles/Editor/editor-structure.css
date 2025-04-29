@@ -1,0 +1,18 @@
+.editor-back{
+	width: 100vw;
+	height: 100vh;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.editor-text{
+	width: 80%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+}

@@ -1,0 +1,105 @@
+:root{
+	--row-height: 40px;
+}
+
+/**/
+
+.list-body{
+	width: 100%;
+	height: fit-content;
+}
+
+.list-body > .row{
+	width: 100%;
+	max-height: 40px;
+}
+
+/* AddingItem */
+.item-adder.row{
+	height: fit-content;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 2px;
+}
+
+.item-adder.icon{
+	height: 0px;
+	user-select: none;
+
+	transition: ease height 0.3s;
+}
+
+.item-adder.row:hover .item-adder.icon{
+	height: calc(var(--row-height) / 2);
+}
+
+/* ListItem */
+.list-item.row{
+	height: var(--row-height);
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: start;
+	align-items: center;
+
+	padding: 4px;
+	opacity: 1;
+
+	transition: ease height 0.3s;
+	transition: ease transform 0.3s;
+}
+
+.list-item.row.close{
+	height: 0px;
+}
+
+.list-item.row.out{
+	transform: translateX(-100%);
+}
+
+.list-item.colour{
+	width: fit-content;
+	height: calc((var(--row-height) - 8px) / 2);
+	aspect-ratio: 1;
+}
+
+.list-item.name-holder{
+	width: calc((100% - (var(--row-height) - 8px) / 4 * 5) / 4 * 3);
+
+	display: block;
+	margin-left: 4px;
+}
+
+.list-item.name-holder.show .list-item.name-edit,
+.list-item.name-holder.edit .list-item.list-item.name-display,
+.list-item.weight-holder.show .list-item.weight-edit,
+.list-item.weight-holder.edit .list-item.list-item.weight-display{
+	height: 0;
+}
+
+.list-item.weight-holder{
+	width: calc((100% - (var(--row-height) - 8px) / 4 * 5) / 4 - 12px);
+
+	display: block;
+	margin-left: 4px;
+}
+
+.list-item.name-edit,
+.list-item.name-display,
+.list-item.weight-edit,
+.list-item.weight-display{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.list-item.del-btn{
+	width: fit-content;
+	height: calc((var(--row-height) - 8px) / 4 * 3);
+	aspect-ratio: 1;
+	margin-left: 4px;
+}

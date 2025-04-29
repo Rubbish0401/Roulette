@@ -1,0 +1,120 @@
+body{
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+}
+
+.separator{
+	width: 100%;
+	height: 2px;
+
+	margin: 2px 0px !important;
+}
+
+/* Pane */
+
+.pane{
+	width: 100%;
+	height: 100%;
+
+	display: block;
+	padding: 16px;
+}
+
+.pane#display-pane{
+	max-width: calc(100% - 480px);
+}
+
+.pane#edit-pane{
+	max-width: 480px;
+	user-select: none;
+}
+
+/* Display */
+#display-inside{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#roulette{
+	width: calc(min(100vw - 496px, 100vh - 16px) * 0.8);
+	height: auto;
+	aspect-ratio: 1;
+}
+
+#roulette-arrow{
+	width: fit-content;
+	height: 32px;
+
+	position: absolute;
+	transform: translateY(calc(-1 * min(100vw - 496px, 100vh - 16px) * 0.4 - 12px));
+}
+
+/* Inside Pane */
+.inside-pane{
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+	display: block;
+	padding: 8px;
+}
+
+.inside-pane > *{
+	margin-top: 8px;
+}
+
+.inside-pane > *:first-child{
+	margin-top: 0px;
+}
+
+/* Buttons */
+.row-buttons{
+	width: 100%;
+	height: 40px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+
+	padding: 2px;
+	margin: 0px auto;
+}
+.btn-func{
+	width: auto;
+	height: 100%;
+	aspect-ratio: 1;
+}
+
+/*  */
+.list-back{
+	width: 100%;
+	height: calc(100% - 136px);
+
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/*  */
+.button-container{
+	width: 100%;
+	height: 80px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-done{
+	min-width: calc(64px * 16 / 9);
+	width: fit-content;
+	height: 64px;
+
+	padding: 4px 16px;
+}
